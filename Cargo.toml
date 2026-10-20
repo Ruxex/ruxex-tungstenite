@@ -1,5 +1,5 @@
 [package]
-name = "tungstenite"
+name = "ruxex-tungstenite"
 description = "Lightweight stream-based WebSocket implementation"
 categories = ["web-programming::websocket", "network-programming"]
 keywords = ["websocket", "io", "web"]
@@ -7,8 +7,8 @@ authors = ["Alexey Galakhov", "Daniel Abramov"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 homepage = "https://github.com/snapview/tungstenite-rs"
-documentation = "https://docs.rs/tungstenite/0.27.0"
-repository = "https://github.com/snapview/tungstenite-rs"
+documentation = "https://docs.rs/ruxex-tungstenite/0.27.0"
+repository = "https://github.com/Ruxex/ruxex-tungstenite"
 version = "0.27.0"
 edition = "2021"
 rust-version = "1.75"
@@ -16,6 +16,9 @@ include = ["benches/**/*", "src/**/*", "examples/**/*", "LICENSE-*", "README.md"
 
 [package.metadata.docs.rs]
 all-features = true
+
+[lib]
+name = "tungstenite"
 
 [features]
 default = ["handshake"]
